@@ -1,0 +1,251 @@
+/* Estilos para o cabeçalho */
+.header {
+    background-color: #ff8c69; /* Laranja claro */
+    padding: 20px;
+    text-align: center;
+}
+
+.logo img {
+    width: 150px; /* Ajuste conforme necessário */
+    height: auto; /* Altura automática para manter a proporção */
+    border-radius: 50%; /* Torna a imagem redonda */
+}
+
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilo para o body com degradê entre duas cores */
+body {
+    background: linear-gradient(to bottom right, #fffbf3, #ffc2a1); /* Gradiente laranja claro para laranja escuro */
+}
+
+/* CSS para centralizar a seção de início */
+.C-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    height: 30vh; /* Define a altura igual à altura da viewport */
+}
+
+h1 {
+    color: #ff6347; /* Vermelho coral */
+    text-align: center;
+}
+
+/* Estilos para os produtos */
+.produtos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.produto {
+    width: 300px;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.produto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.produto h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.produto p {
+    color: #666;
+}
+
+.produto .preco {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #000;
+}
+
+.produto button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffa07a; /* Tom de pêssego */
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.produto button:hover {
+    background-color: #ff7f50; /* Tom de laranja escuro */
+}
+
+/* Estilos para a seção de contato */
+#contato {
+    background-color: #ffc2a1; /* Rosa Claro */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.container-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+/* Estilos para o formulário */
+form {
+    background-color: #6495ed; /* Azul Pólvora */
+    padding: 2rem;
+    width: 50rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+form:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilos para o título do formulário */
+form h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #ff4500; /* Laranja Vermelha */
+    margin-bottom: 2rem;
+}
+
+/* Estilos para o campo de entrada e o ícone */
+.inputform {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: #ffffff; /* Branco */
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inputform input, .inputform textarea, .inputform select {
+    flex: 1;
+    padding: 1rem;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 1.2rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.inputform input::placeholder {
+    color: #bbb;
+}
+
+.inputform input:focus {
+    color: #000;
+}
+
+.inputform span {
+    font-size: 1.5rem;
+    color: #ff6347; /* Vermelho Coral */
+    margin-right: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.inputform:hover span {
+    color: #ff0000; /* Vermelho */
+}
+
+/* Estilo para o ícone de estrela */
+.inputform select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    color: #777;
+    cursor: pointer;
+    position: relative;
+    margin-left: 0.5rem;
+}
+
+/* Estilo para as opções */
+.inputform select option {
+    display: block;
+    position: relative;
+    color: #777;
+}
+
+/* Estilo para a estrela selecionada */
+.inputform select option:checked:before {
+    content: '★';
+    display: inline-block;
+    color: #ffc107; /* Amarelo Limão */
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+/* Animação de hover para as estrelas */
+.inputform select option:hover:before {
+    transform: scale(1.2);
+    color: #ffa1a1; /* Vermelho Coral */
+}
+
+/* Estilos para o botão de enviar */
+form button {
+    margin-top: 2rem;
+    background-color: #32cd32; /* Verde Lime */
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #228b22; /* Verde Floresta */
+}
